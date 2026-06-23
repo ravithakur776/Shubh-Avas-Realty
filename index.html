@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Shubh Avas Realty | Luxury Architectural Estates Mathura</title>
+    <meta name="description" content="Experience modern architecture beyond imagination in Mathura, Uttar Pradesh. Shubh Avas Realty crafts ultra-luxury homes and symmetrical glass villa sanctuaries.">
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="Shubh Avas Realty | Luxury Architectural Estates Mathura">
+    <meta property="og:description" content="Bespoke estate development and turnkey luxury residential solutions. Experience timeless design along the sacred lands of Mathura.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="index.css?v=1.1">
+</head>
+<body>
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow" id="custom-cursor"></div>
+
+    <!-- Premium Loader Overlay -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader-content">
+            <span class="loader-logo">SHUBH AVAS</span>
+            <div class="loader-bar-bg">
+                <div class="loader-bar" id="loader-bar"></div>
+            </div>
+            <span class="loader-text" id="loader-text">Loading Experience 0%</span>
+        </div>
+    </div>
+
+    <!-- Site Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="nav-container">
+            <a href="#" class="logo" id="logo-link">SHUBH AVAS</a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <a href="#about" class="nav-link">Heritage</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#featured" class="nav-link">Properties</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#contact" class="nav-link">Inquire</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn-nav" id="nav-cta-btn">Book Private Tour</a>
+            </div>
+            <!-- Hamburger menu for mobile -->
+            <button class="hamburger-menu" id="hamburger-btn" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+        <!-- Full-screen Mobile Menu -->
+        <div class="mobile-menu-overlay" id="mobile-menu">
+            <nav class="mobile-nav" aria-label="Mobile Navigation">
+                <a href="#about" class="mobile-link">Heritage</a>
+                <a href="#services" class="mobile-link">Services</a>
+                <a href="#featured" class="mobile-link">Properties</a>
+                <a href="#process" class="mobile-link">Process</a>
+                <a href="#contact" class="mobile-link">Inquire</a>
+                <a href="#contact" class="btn btn-primary mobile-cta">Book Private Tour</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Full-screen Cinematic Hero Scroll Container (DO NOT TOUCH - PRESERVED EXACTLY) -->
+        <section class="hero-scroll-container" aria-label="Cinematic Showcase">
+            <!-- Scroll Track defines the scroll length -->
+            <div class="scroll-track">
+                <!-- Sticky Viewport stays in place -->
+                <div class="sticky-viewport">
+                    <!-- 60FPS Render Canvas -->
+                    <canvas id="hero-canvas"></canvas>
+                    
+                    <!-- Ambient Glow Effects -->
+                    <div class="hdr-bloom"></div>
+                    <div class="gradient-overlay"></div>
+
+                    <!-- Overlay Content (Center Left aligned) -->
+                    <div class="hero-overlay">
+                        <div class="text-container">
+                            <span class="hero-label char-anim">Luxury Living Redefined</span>
+                            <h1 class="hero-title">
+                                <span class="word-wrapper"><span class="word-anim">Experience</span></span>
+                                <span class="word-wrapper"><span class="word-anim">Modern</span></span>
+                                <span class="word-wrapper"><span class="word-anim">Architecture</span></span>
+                                <span class="word-wrapper"><span class="word-anim">Beyond</span></span>
+                                <span class="word-wrapper"><span class="word-anim">Imagination</span></span>
+                            </h1>
+                            <p class="hero-subheading char-anim">
+                                Timeless design, panoramic glass architecture, handcrafted luxury, and breathtaking living spaces built for extraordinary lifestyles.
+                            </p>
+                            <div class="hero-ctas">
+                                <a href="#about" class="btn btn-primary" id="explore-btn">Explore Villa</a>
+                                <a href="#contact" class="btn btn-secondary" id="book-btn">Book a Private Tour</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Scroll Indicator -->
+                    <div class="scroll-indicator">
+                        <span class="scroll-text">Scroll to Experience</span>
+                        <div class="scroll-mouse">
+                            <div class="scroll-wheel"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Luxury Introduction -->
+        <section id="introduction" class="intro-section" aria-label="Introduction">
+            <div class="container">
+                <div class="intro-wrapper">
+                    <div class="intro-text-wrapper">
+                        <div class="divider-gold animate-line"></div>
+                        <h2 class="intro-title" id="intro-headline">We Craft Architectural Legends in Holy Lands.</h2>
+                        <p class="intro-p scroll-reveal">
+                            Shubh Avas Realty brings world-class luxury living to the ancient city of Mathura. By fusing timeless spiritual proportions with cutting-edge glass architecture, we build modern sanctuaries that rise elegantly from historical soil.
+                        </p>
+                    </div>
+                    <div class="intro-visual-wrapper">
+                        <div class="image-reveal-mask">
+                            <div class="image-mask-inner">
+                                <img src="luxury villa images/ezgif-frame-005.jpg" alt="Shubh Avas Symmetrical Architecture Preview" class="intro-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About Company -->
+        <section id="about" class="section about-section" aria-label="About Shubh Avas">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text-col">
+                        <span class="section-tag scroll-reveal">01 / Heritage</span>
+                        <h2 class="section-title scroll-reveal">A Legacy of Trust and Grandeur</h2>
+                        <p class="section-paragraph scroll-reveal">
+                            Shubh Avas Realty stands as Mathura's premier developer of ultra-luxury estates. Combining 15 years of construction excellence with architectural innovation, we serve the most discerning families seeking exclusive sanctuaries along the sacred river banks.
+                        </p>
+                        <div class="stats-counters">
+                            <div class="stat-card glass-card scroll-reveal">
+                                <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Years of Heritage</span>
+                            </div>
+                            <div class="stat-card glass-card scroll-reveal">
+                                <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Luxury Residences</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual-col">
+                        <div class="parallax-img-container scroll-reveal" data-speed="0.15">
+                            <img src="luxury villa images/ezgif-frame-150.jpg" alt="Premium Architectural Detail" class="about-parallax-img">
+                            <div class="floating-glass-card scroll-reveal">
+                                <h4>"Where divinity meets modern spatial elegance."</h4>
+                                <span class="card-author">Principal Architect</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Services -->
+        <section id="services" class="section services-section" aria-label="Our Atelier Services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag scroll-reveal">02 / The Atelier</span>
+                    <h2 class="section-title scroll-reveal">Tailored Architectural Services</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glass-card scroll-reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="service-glow-overlay"></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M5 21V7m14 14V7M9 21v-4a3 3 0 0 1 6 0v4"/></svg>
+                        </div>
+                        <h3>Estate Development</h3>
+                        <p>Turnkey master planning and construction of custom ultra-luxury villas and architectural estates in prime locations.</p>
+                        <a href="#contact" class="btn-text">Inquire Service <span class="arrow">→</span></a>
+                    </div>
+                    <div class="service-card glass-card scroll-reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="service-glow-overlay"></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m2 22 1-1m18-18 1-1M7 11V7m0 4h4m-4 0v4m0-4H3m14 6V11m0 6h4m-4 0v4m0-4h-4M14 3h-4v4h4V3Zm0 14h-4v4h4v-4Z"/></svg>
+                        </div>
+                        <h3>Bespoke Interior Atelier</h3>
+                        <p>Curating hand-selected Italian marble, custom brass details, and panoramic smart-glass installations for elite aesthetics.</p>
+                        <a href="#contact" class="btn-text">Inquire Service <span class="arrow">→</span></a>
+                    </div>
+                    <div class="service-card glass-card scroll-reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="service-glow-overlay"></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3>Asset Stewardship</h3>
+                        <p>Private advisory, legal consulting, and property management for ultra-high-net-worth investors and NRI clientele.</p>
+                        <a href="#contact" class="btn-text">Inquire Service <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Featured Properties (Horizontal Scrolling Pin Showcase) -->
+        <section id="featured" class="horizontal-scroll-section" aria-label="Featured Portfolio">
+            <div class="horizontal-scroll-track" id="horizontal-track">
+                <!-- Intro Panel -->
+                <div class="panel panel-intro">
+                    <div class="panel-intro-content">
+                        <span class="section-tag">03 / Portfolio</span>
+                        <h2 class="panel-title">Curated Residences</h2>
+                        <p>Swipe or scroll vertically to explore our flagship ultra-luxury architectural landmarks across Mathura.</p>
+                        <div class="scroll-arrow-horizontal">
+                            <span>Explore Properties</span>
+                            <div class="arrow-line"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 1 -->
+                <div class="panel panel-property">
+                    <div class="property-card glass-card">
+                        <div class="property-img-wrapper">
+                            <img src="luxury villa images/ezgif-frame-060.jpg" alt="The Aurelia Canopy" class="property-img">
+                        </div>
+                        <div class="property-details">
+                            <span class="prop-location">Chaitanya Vihar, Mathura</span>
+                            <h3>The Aurelia Canopy</h3>
+                            <p>Symmetrical glass masterwork featuring a suspended cantilever pool, private temple pavilion, and panoramic forest vistas.</p>
+                            <div class="prop-footer">
+                                <span class="prop-price">Price Upon Request</span>
+                                <a href="#contact" class="btn btn-primary magnetic-btn">Request Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="panel panel-property">
+                    <div class="property-card glass-card">
+                        <div class="property-img-wrapper">
+                            <img src="luxury villa images/ezgif-frame-120.jpg" alt="Yamuna Vista Residence" class="property-img">
+                        </div>
+                        <div class="property-details">
+                            <span class="prop-location">Vrindavan Road, Mathura</span>
+                            <h3>Yamuna Vista Pavilion</h3>
+                            <p>A sprawling residential sanctuary containing 6 state suites, grand open-air courtyards, and double-height custom double glazed thermal panels.</p>
+                            <div class="prop-footer">
+                                <span class="prop-price">Price Upon Request</span>
+                                <a href="#contact" class="btn btn-primary magnetic-btn">Request Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="panel panel-property">
+                    <div class="property-card glass-card">
+                        <div class="property-img-wrapper">
+                            <img src="luxury villa images/ezgif-frame-180.jpg" alt="The Sanctuary Mansions" class="property-img">
+                        </div>
+                        <div class="property-details">
+                            <span class="prop-location">Hari Puram, Mathura</span>
+                            <h3>The Sanctuary Mansions</h3>
+                            <p>An exclusive gated estate engineered with biophilic structures, zero-impact smart grids, and hand-finished copper roofs.</p>
+                            <div class="prop-footer">
+                                <span class="prop-price">Price Upon Request</span>
+                                <a href="#contact" class="btn btn-primary magnetic-btn">Request Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Why Choose Us (Apple Style Sticky Storytelling) -->
+        <section id="choose-us" class="storytelling-section" aria-label="Why Choose Us">
+            <div class="storytelling-sticky" id="story-sticky">
+                <div class="container">
+                    <div class="story-grid">
+                        <div class="story-left-col">
+                            <span class="section-tag">04 / Excellence</span>
+                            <h2 class="section-title">The Art of Execution</h2>
+                            <!-- Animated Timeline indicator -->
+                            <div class="story-timeline-track">
+                                <div class="story-timeline-fill" id="story-timeline-fill"></div>
+                                <div class="timeline-step active" data-step="1">01</div>
+                                <div class="timeline-step" data-step="2">02</div>
+                                <div class="timeline-step" data-step="3">03</div>
+                            </div>
+                        </div>
+                        <div class="story-right-col">
+                            <div class="story-card-wrapper">
+                                <div class="story-card active" id="story-card-1">
+                                    <h3>Symmetry in Alignment</h3>
+                                    <p>We respect the golden ratios of spatial balance. Every estate is positioned relative to solar arcs and geometric axis lines, creating an unmatched sense of visual balance and interior peace.</p>
+                                </div>
+                                <div class="story-card" id="story-card-2">
+                                    <h3>Crafted Materials</h3>
+                                    <p>We do not settle. From structural concrete blocks cured in pristine water to high-grade anodized aluminum window profiles, every material is certified for generational lifetime endurance.</p>
+                                </div>
+                                <div class="story-card" id="story-card-3">
+                                    <h3>Divine Serenity</h3>
+                                    <p>Every sanctuary we construct in Mathura respects the cultural heritage of Vastu Shastra while introducing state-of-the-art automation, security, and acoustic isolation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Construction / Buying Process (Timeline) -->
+        <section id="process" class="section process-section" aria-label="Acquisition Process">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-tag scroll-reveal">05 / Journey</span>
+                    <h2 class="section-title scroll-reveal">The Acquisition Journey</h2>
+                </div>
+                
+                <div class="timeline-wrapper">
+                    <div class="timeline-line-container">
+                        <!-- Golden SVG line to draw on scroll -->
+                        <svg class="timeline-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path id="timeline-path" d="M 50,0 L 50,100" fill="none" stroke="#C8A45D" stroke-width="2" />
+                        </svg>
+                    </div>
+                    
+                    <div class="timeline-items">
+                        <!-- Step 1 -->
+                        <div class="timeline-item left scroll-reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="step-count">Step 01</span>
+                                <h3>Private Briefing</h3>
+                                <p>We invite clients to a confidential consultation at our atelier. Here we detail architectural designs, layouts, and customization preferences.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="timeline-item right scroll-reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="step-count">Step 02</span>
+                                <h3>Atelier Adaptation</h3>
+                                <p>Our lead architects customize the selected layouts, adjusting window elevations, materials, and orientations to match your precise lifestyle.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="timeline-item left scroll-reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="step-count">Step 03</span>
+                                <h3>Bespoke Creation</h3>
+                                <p>Groundwork is initiated. We issue weekly digital drone scans and progress updates, ensuring absolute construction transparency.</p>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="timeline-item right scroll-reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="step-count">Step 04</span>
+                                <h3>Grand Handover</h3>
+                                <p>The keys are delivered alongside full structural certificates, custom home control codes, and bespoke maintenance steward assignments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Statistics banner -->
+        <section class="section stats-banner-section" aria-label="Performance Metrics">
+            <div class="parallax-bg-wrapper">
+                <div class="parallax-bg-overlay"></div>
+                <img src="luxury villa images/ezgif-frame-200.jpg" alt="Luxury Background Detail" class="parallax-bg-img">
+            </div>
+            <div class="container relative-z">
+                <div class="stats-banner-grid">
+                    <div class="stats-banner-item scroll-reveal">
+                        <span class="banner-num" data-target="100">0</span><span class="banner-suffix">%</span>
+                        <span class="banner-label">Vastu Compliant</span>
+                    </div>
+                    <div class="stats-banner-item scroll-reveal">
+                        <span class="banner-num" data-target="98">0</span><span class="banner-suffix">%</span>
+                        <span class="banner-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stats-banner-item scroll-reveal">
+                        <span class="banner-num" data-target="24">0</span><span class="banner-suffix">/7</span>
+                        <span class="banner-label">Estate Security</span>
+                    </div>
+                    <div class="stats-banner-item scroll-reveal">
+                        <span class="banner-num" data-target="150">0</span><span class="banner-suffix">M+</span>
+                        <span class="banner-label">Assets Managed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Testimonials (Swiper Slider) -->
+        <section id="testimonials" class="section testimonials-section" aria-label="Testimonials">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-tag scroll-reveal">06 / Reputation</span>
+                    <h2 class="section-title scroll-reveal">Patrons of Excellence</h2>
+                </div>
+                
+                <div class="swiper testimonials-slider scroll-reveal">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card glass-card">
+                                <span class="quote-mark">“</span>
+                                <p class="testimonial-text">
+                                    "Shubh Avas has created more than a house for us; they built a serene sanctuary. The architectural symmetry and attention to natural light make our morning meditations on the Yamuna vistas truly sublime."
+                                </p>
+                                <div class="client-profile">
+                                    <div class="client-avatar-wrapper">
+                                        <img src="luxury villa images/ezgif-frame-220.jpg" alt="Client Headshot" class="client-avatar">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4>Ananya Singhal</h4>
+                                        <span>Industrialist, Delhi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card glass-card">
+                                <span class="quote-mark">“</span>
+                                <p class="testimonial-text">
+                                    "Their focus on premium concrete composition, Swiss Sky-Frame glass panels, and absolute client transparency sets Shubh Avas Realty lightyears ahead of any developer in Uttar Pradesh. An absolute masterpiece."
+                                </p>
+                                <div class="client-profile">
+                                    <div class="client-avatar-wrapper">
+                                        <img src="luxury villa images/ezgif-frame-240.jpg" alt="Client Headshot" class="client-avatar">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4>Kabir Bhardwaj</h4>
+                                        <span>Private Equity, Mumbai</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card glass-card">
+                                <span class="quote-mark">“</span>
+                                <p class="testimonial-text">
+                                    "Working with the interior design studio was a dream. The combination of local Mathura sandstone elements with imported luxury finishes creates an environment that is both deeply rooted and globally premium."
+                                </p>
+                                <div class="client-profile">
+                                    <div class="client-avatar-wrapper">
+                                        <img src="luxury villa images/ezgif-frame-260.jpg" alt="Client Headshot" class="client-avatar">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4>Dr. Devendra Sharma</h4>
+                                        <span>Cardiologist, London</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swiper Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Gallery (Masonry Layout with Filters) -->
+        <section id="gallery-sec" class="section gallery-section" aria-label="Visual Gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag scroll-reveal">07 / Gallery</span>
+                    <h2 class="section-title scroll-reveal">Visualizing Symmetrical Grandeur</h2>
+                    <!-- Gallery Filters -->
+                    <div class="gallery-filters scroll-reveal" id="gallery-filters">
+                        <button class="filter-btn active" data-filter="all">All Details</button>
+                        <button class="filter-btn" data-filter="exterior">Exteriors</button>
+                        <button class="filter-btn" data-filter="interior">Interiors</button>
+                        <button class="filter-btn" data-filter="concept">Concept Sketches</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-masonry scroll-reveal" id="gallery-grid">
+                    <!-- Item 1 -->
+                    <div class="masonry-item exterior" onclick="openLightbox(this)">
+                        <div class="masonry-inner">
+                            <img src="luxury villa images/ezgif-frame-005.jpg" alt="Symmetrical Glass Facade Golden Hour">
+                            <div class="masonry-hover">
+                                <span>View Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="masonry-item interior" onclick="openLightbox(this)">
+                        <div class="masonry-inner">
+                            <img src="luxury villa images/ezgif-frame-115.jpg" alt="Modern Minimalist Suite">
+                            <div class="masonry-hover">
+                                <span>View Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="masonry-item exterior" onclick="openLightbox(this)">
+                        <div class="masonry-inner">
+                            <img src="luxury villa images/ezgif-frame-075.jpg" alt="Reflecting Pool Sunset">
+                            <div class="masonry-hover">
+                                <span>View Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="masonry-item concept" onclick="openLightbox(this)">
+                        <div class="masonry-inner">
+                            <img src="luxury villa images/ezgif-frame-211.jpg" alt="Architectural Plan Sketch">
+                            <div class="masonry-hover">
+                                <span>View Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="masonry-item interior" onclick="openLightbox(this)">
+                        <div class="masonry-inner">
+                            <img src="luxury villa images/ezgif-frame-141.jpg" alt="Double Height Dining Salon">
+                            <div class="masonry-hover">
+                                <span>View Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="masonry-item concept" onclick="openLightbox(this)">
+                        <div class="masonry-inner">
+                            <img src="luxury villa images/ezgif-frame-226.jpg" alt="Slab Cantilever Detail">
+                            <div class="masonry-hover">
+                                <span>View Detail</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+                <span class="lightbox-close" onclick="event.stopPropagation(); closeLightbox();">&times;</span>
+                <div class="lightbox-content" onclick="event.stopPropagation();">
+                    <img id="lightbox-img" src="" alt="Enlarged View">
+                    <p id="lightbox-caption"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. FAQ Accordion -->
+        <section class="section faq-section" aria-label="Frequently Asked Questions">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-tag scroll-reveal">08 / Advisory</span>
+                    <h2 class="section-title scroll-reveal">Architectural Advisory FAQ</h2>
+                </div>
+                
+                <div class="faq-accordion scroll-reveal">
+                    <!-- Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Are the villas Vastu compliant?</span>
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Yes. All Shubh Avas properties are fully Vastu Shastra certified. Our lead planners coordinates directly with traditional structural specialists to ensure correct orientation of entrances, water features, and principal suites to promote absolute harmony.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>What structural durability assurances are provided?</span>
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-content">
+                            <p>We provide a comprehensive 15-year structural warranty on concrete foundations and cantilever beams. Additionally, all glass panel seals carry a 10-year warranty, backed by custom Swiss manufacturing standards.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Can clients customize the building materials?</span>
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Absolutely. During the initial brief and design adaptation phase, clients can select specific marble cladding, custom wood textures, anodized coatings, and smart glass features to tailor the estate to their specific styling preferences.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>How do you handle privacy and smart integration?</span>
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Every residence is equipped with high-end biometric security gates, perimeter lidar surveillance, and a Control4 home intelligence grid. Glass panes are fitted with electrochromic film options for customizable digital opacity at the touch of a button.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Contact Section -->
+        <section id="contact" class="section contact-section" aria-label="Book Tour / Inquire">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info-col scroll-reveal">
+                        <span class="section-tag">09 / Concierge</span>
+                        <h2 class="section-title">Inquire Private Viewing</h2>
+                        <p class="section-paragraph">
+                            Our private brokerage stewards coordinates meetings with qualified buyers. Provide your details below, and our concierge desk will contact you within 2 hours.
+                        </p>
+                        <div class="office-locations">
+                            <div class="location-item">
+                                <h4>Mathura Atelier</h4>
+                                <p>12, Krishna Vihar, Vrindavan Road, Mathura, UP 281001</p>
+                            </div>
+                            <div class="location-item">
+                                <h4>Concierge Desk</h4>
+                                <p>Call: +91 (800) 555-7788<br>Email: concierge@shubhavas.com</p>
+                            </div>
+                        </div>
+                        <!-- Iframe Google Map customized with grayscale filter -->
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56686.096336338576!2d77.63914486948011!3d27.47291129528659!2m3!1f0!2f0!3f0!3m2!1i1024|2i768|4f13.1!3m3!1m2!1s0x397371160fd7b9b3%3A0xc30c4e7d1d2b83b!2sMathura%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1782124500000!5m2!1sen!2sin" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Mathura Google Map Location"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form-col scroll-reveal">
+                        <form class="glass-form luxury-form" id="contact-form">
+                            <div class="form-group-floating">
+                                <input type="text" id="c-name" required class="form-input" placeholder=" ">
+                                <label for="c-name">Full Name</label>
+                            </div>
+                            <div class="form-group-floating">
+                                <input type="email" id="c-email" required class="form-input" placeholder=" ">
+                                <label for="c-email">Email Address</label>
+                            </div>
+                            <div class="form-group-floating">
+                                <input type="tel" id="c-phone" required class="form-input" placeholder=" ">
+                                <label for="c-phone">Phone Number</label>
+                            </div>
+                            <div class="form-group-floating">
+                                <select id="c-interest" required class="form-input form-select">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Aurelia Canopy">The Aurelia Canopy (Chaitanya Vihar)</option>
+                                    <option value="Yamuna Vista">Yamuna Vista Pavilion (Vrindavan Road)</option>
+                                    <option value="Sanctuary Mansions">The Sanctuary Mansions (Hari Puram)</option>
+                                    <option value="Custom Development">Custom Villa Land / Development</option>
+                                </select>
+                                <label for="c-interest" class="select-label">Property Interest</label>
+                            </div>
+                            <div class="form-group-floating">
+                                <textarea id="c-message" rows="3" required class="form-input" placeholder=" "></textarea>
+                                <label for="c-message">Inquiry Preferences</label>
+                            </div>
+                            
+                            <!-- Submit Button with Magnetic Wrapper -->
+                            <div class="magnetic-wrapper">
+                                <button type="submit" class="btn btn-primary btn-submit-luxury" id="contact-submit-btn">
+                                    <span class="btn-text-layer">Request Private Invitation</span>
+                                    <span class="btn-arrow-icon">→</span>
+                                    <div class="btn-ripple-container"></div>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="success-message-overlay" id="success-overlay">
+                            <div class="success-content">
+                                <svg class="checkmark-svg" viewBox="0 0 52 52">
+                                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                </svg>
+                                <h3>Brief Received</h3>
+                                <p>A private broker from our concierge desk will contact you within the hour to coordinate qualification credentials.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 13. Luxury Footer -->
+    <footer class="site-footer luxury-footer">
+        <div class="footer-gradient-line"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <span class="footer-brand-title">SHUBH AVAS</span>
+                    <p class="footer-tagline">Architectural Masterpieces in the Sacred Realms.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Atelier Links</h4>
+                    <a href="#about">Heritage</a>
+                    <a href="#services">Atelier Services</a>
+                    <a href="#featured">Featured Collection</a>
+                    <a href="#process">Acquisition Journey</a>
+                </div>
+                <div class="footer-social-col">
+                    <h4>Follow Shubh Avas</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" class="social-link-icon">IG</a>
+                        <a href="#" aria-label="LinkedIn" class="social-link-icon">LN</a>
+                        <a href="#" aria-label="YouTube" class="social-link-icon">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Shubh Avas Realty. Designed under Luxury Symmetrical Principles. All rights reserved.</p>
+                <p class="footer-legal">Mathura - Vrindavan, Uttar Pradesh, India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CDNs for animations and controls -->
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Canvas Animation & GSAP Control Script -->
+    <script src="index.js?v=1.1"></script>
+</body>
+</html>
