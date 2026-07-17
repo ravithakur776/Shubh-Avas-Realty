@@ -100,3 +100,5 @@ This project runs entirely on client-side vanilla code (HTML, CSS, JS). Due to m
 
 All rights reserved. Designed and developed with modern symmetrical guidelines for ultra-luxury presentations.
 
+
+
